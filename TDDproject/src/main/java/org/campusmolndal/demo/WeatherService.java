@@ -6,6 +6,14 @@ public class WeatherService {
     private double temp_min;
     private double temp_max;
 
+
+    public WeatherService(WeatherAPI api) {
+        api = new WeatherAPI();
+
+
+    }
+
+
     public double getTemp() {
         return temp;
     }

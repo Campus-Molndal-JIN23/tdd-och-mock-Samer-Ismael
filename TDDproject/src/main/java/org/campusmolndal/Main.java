@@ -13,13 +13,7 @@ import org.campusmolndal.demo.WeatherService;
 public class Main {
     public static void main(String[] args) {
 
-        WeatherAPI api = new WeatherAPI();
-        WeatherService weather = api.getData();
 
-        System.out.println(weather.getFeels_like());
-        System.out.println(weather.getTemp());
-        System.out.println(weather.getTemp_max());
-        System.out.println(weather.getTemp_min());
 
     }
 }
