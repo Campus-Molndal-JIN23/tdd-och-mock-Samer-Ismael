@@ -1,34 +1,22 @@
 package org.campusmolndal.demo;
 public class WeatherService {
 
-    private double temp;
-    private double feels_like;
-    private double temp_min;
-    private double temp_max;
+    private WeatherAPI weatherAPI;
 
-
-    public WeatherService(WeatherAPI api) {
-        api = new WeatherAPI();
-
-
+    public WeatherService(WeatherAPI weatherAPI) {
+        this.weatherAPI = weatherAPI;
     }
 
-
-    public double getTemp() {
-        return temp;
+    public Double getTemperature() {
+        return weatherAPI.getTemperature();
     }
 
-    public double getFeels_like() {
-        return feels_like;
+    public Double getWindSpeed() {
+        return weatherAPI.getWindSpeed();
     }
 
-    public double getTemp_min() {
-        return temp_min;
-    }
-
-
-    public double getTemp_max() {
-        return temp_max;
+    public Double getCloudiness() {
+        return weatherAPI.getCloudiness();
     }
 
 }
