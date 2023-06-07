@@ -23,8 +23,8 @@ class WeatherServiceTest {
         when(mockAPI.getTemperature()).thenReturn(50.0);
         assertEquals(50.0, sut.getTemperature());
         assertNotEquals(0.0, sut.getTemperature());
-        assertTrue(sut.getTemperature() > 0);
-        assertFalse(sut.getTemperature() < 0);
+        assertTrue(sut.getTemperature() == 50.0);
+        assertFalse(sut.getTemperature() != 50.0);
     }
 
     @Test
@@ -32,8 +32,8 @@ class WeatherServiceTest {
         when(mockAPI.getWindSpeed()).thenReturn(5.0);
         assertEquals(5.0, sut.getWindSpeed());
         assertNotEquals(0.0, sut.getWindSpeed());
-        assertTrue(sut.getWindSpeed() > 0);
-        assertFalse(sut.getWindSpeed() < 0);
+        assertTrue(sut.getWindSpeed() == 5.0);
+        assertFalse(sut.getWindSpeed() != 5.0);
 
     }
 
@@ -42,7 +42,7 @@ class WeatherServiceTest {
         when(mockAPI.getCloudiness()).thenReturn(75.0);
         assertEquals(75.0, sut.getCloudiness());
         assertNotEquals(0.0, sut.getCloudiness());
-        assertTrue(sut.getCloudiness() > 0);
-        assertFalse(sut.getCloudiness() < 0);
+        assertTrue(sut.getCloudiness() == 75.0);
+        assertFalse(sut.getCloudiness() != 75.0);
     }
 }
