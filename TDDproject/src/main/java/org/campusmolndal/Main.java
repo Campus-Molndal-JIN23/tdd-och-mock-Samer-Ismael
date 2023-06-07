@@ -1,5 +1,6 @@
 package org.campusmolndal;
-
+import org.campusmolndal.demo.WeatherAPI;
+import org.campusmolndal.demo.WeatherService;
 /*
  * ----------------------------------------------------------------------------
  * Copyright (c) 2019-2023 Marcus Medina, Campus Mölndal
@@ -11,17 +12,15 @@ package org.campusmolndal;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        // Press Alt+Enter with your caret at the highlighted text to see how
-        // IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        // Press Shift+F10 or click the green arrow button in the gutter to run the code.
-        for (int i = 1; i <= 5; i++) {
+        WeatherAPI api = new WeatherAPI();
+        WeatherService weather = api.getData();
 
-            // Press Shift+F9 to start debugging your code. We have set one breakpoint
-            // for you, but you can always add more by pressing Ctrl+F8.
-            System.out.println("i = " + i);
-        }
+        System.out.println(weather.getFeels_like());
+        System.out.println(weather.getTemp());
+        System.out.println(weather.getTemp_max());
+        System.out.println(weather.getTemp_min());
+
     }
 }
 
