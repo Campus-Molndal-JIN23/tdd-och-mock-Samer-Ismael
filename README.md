@@ -17,6 +17,7 @@ This is a simple Weather API class testing using Mockito test. I created this pr
 
 * [member 1] https://github.com/marcusjobb
 
+## dependencies 
 
 * [junit jupiter 5] https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter/5.7.0
 * [mockito-core] https://mvnrepository.com/artifact/org.mockito/mockito-core
