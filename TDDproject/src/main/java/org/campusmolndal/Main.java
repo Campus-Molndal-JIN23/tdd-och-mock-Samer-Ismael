@@ -13,9 +13,9 @@ import org.campusmolndal.demo.WeatherService;
 public class Main {
     public static void main(String[] args) {
 
-        // Jag började att skapa ett riktigt program som visar väder från den Json som finns i uppgiftens beskrivning.
-        // Sedan kom jag på att vi ska imponera oss själva och att vi behöver inte göra mer än det du sa vi behöver göra.
-        // Jag försökte att följa beskrivningen i uppgiften och göra bokstavligen som det står.
+        // Jag började med att bygga ett helt program som visade väder från den där JSON-filen i uppgiftsbeskrivningen.
+        // Men sen kom jag på att vi bara behövde göra det du sa vi ska göra.Inget mer.
+        // Jag har försökt att göra precis det som stod i uppgiften.
 
         /*
         - Du ska skapa en klass (kalla den vad du vill, WeatherAPI exempelvis) som ska ha tomma metoder (return null;)
