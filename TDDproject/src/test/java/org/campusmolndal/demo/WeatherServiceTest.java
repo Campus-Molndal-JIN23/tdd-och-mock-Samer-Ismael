@@ -20,6 +20,7 @@ class WeatherServiceTest {
 
     @Test
     void getTemperature() {
+        // Sånt behövs inte men det står i uppgiften att man ska visa mer en typ av assert.
         when(mockAPI.getTemperature()).thenReturn(50.0);
         assertEquals(50.0, sut.getTemperature());
         assertNotEquals(0.0, sut.getTemperature());
@@ -31,18 +32,11 @@ class WeatherServiceTest {
     void getWindSpeed() {
         when(mockAPI.getWindSpeed()).thenReturn(5.0);
         assertEquals(5.0, sut.getWindSpeed());
-        assertNotEquals(0.0, sut.getWindSpeed());
-        assertTrue(sut.getWindSpeed() == 5.0);
-        assertFalse(sut.getWindSpeed() != 5.0);
-
     }
 
     @Test
     void getCloudiness() {
         when(mockAPI.getCloudiness()).thenReturn(75.0);
         assertEquals(75.0, sut.getCloudiness());
-        assertNotEquals(0.0, sut.getCloudiness());
-        assertTrue(sut.getCloudiness() == 75.0);
-        assertFalse(sut.getCloudiness() != 75.0);
     }
 }
